@@ -17,12 +17,12 @@ Landing page rekrutmen responsif yang dibangun untuk menyajikan informasi lowong
 ## 🤖 AI Policy & Tools Usage
 - **Tools yang Digunakan:** Gemini AI (Google).
 - **Bagaimana Tool Tersebut Membantu:**
- - Membantu merumuskan struktur copywriting dan terjemahan profesional untuk antarmuka landing page dan role cards.
+   - Membantu merumuskan struktur copywriting dan terjemahan profesional untuk antarmuka landing page dan role cards.
 
- - Memberikan referensi kode perbaikan logika JavaScript dan penataan CSS layout untuk mengatasi kendala responsiveness pada hamburger menu dan dropdown.
+   - Memberikan referensi kode perbaikan logika JavaScript dan penataan CSS layout untuk mengatasi kendala responsiveness pada hamburger menu dan dropdown.
 
-- Menyusun kerangka dokumentasi teknis di dalam
-- **Tanggung Jawab Eksekusi:** Kandidat memahami seluruh hasil pekerjaan, dan seluruh proses pengkodean inti, penyesuaian elemen visual, pengujian fungsi interaktif, serta validasi akhir dilakukan secara mandiri.
+   - Menyusun kerangka dokumentasi teknis di dalam
+   - **Tanggung Jawab Eksekusi:** Kandidat memahami seluruh hasil pekerjaan, dan seluruh proses pengkodean inti, penyesuaian elemen visual, pengujian fungsi interaktif, serta validasi akhir dilakukan secara mandiri.
 
 ## 🚀 Cara Menjalankan Project
 Project ini dibuat menggunakan *pure client-side stack* (HTML/CSS/JS) tanpa dependency/framework berat, sehingga sangat mudah untuk dijalankan.
@@ -30,4 +30,4 @@ Project ini dibuat menggunakan *pure client-side stack* (HTML/CSS/JS) tanpa depe
 ### Menjalankan secara Lokal:
 1. **Clone Repository ini:**
    ```bash
-   git clone [https://github.com/username-kamu/NamaLengkap_WebDeveloper_SKBatch2.git](https://github.com/username-kamu/NamaLengkap_WebDeveloper_SKBatch2.git)
+   git clone https://github.com/Revalina-aryt/Revalina_Aryanti_WebDeveloper_SKBatch2.git
