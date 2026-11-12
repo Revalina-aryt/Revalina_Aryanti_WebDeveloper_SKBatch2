@@ -945,16 +945,11 @@ ul {
 
 /* Perbaikan Responsif Hero Section untuk Layar HP / Mobile */
 @media (max-width: 768px) {
-    .hero {
-        padding-top: 20px !important;
-        padding-bottom: 30px !important;
-        min-height: auto !important;
-    }
     /* 1. Ubah struktur grid hero menjadi 1 kolom ke bawah */
     .hero-grid {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     /* 2. Atur bagian logo partner agar turun ke bawah secara rapi (flex-wrap) */
@@ -977,11 +972,13 @@ ul {
         line-height: 1.25;
     }
 
-    /* 3. Batasi ukuran gambar ilustrasi agar tidak terlalu tinggi */
-    .hero-card img, .hero-image img {
-        max-width: 220px !important; /* Perkecil sedikit agar compact */
-        height: auto !important;
-        margin: 10px auto !important;
+    /* 4. Pastikan gambar / grafik di sebelah kanan pas di tengah dan responsif */
+    .hero-card img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     /* 5. Mencegah halaman bergeser ke samping (horizontal scroll) */
