@@ -943,42 +943,47 @@ ul {
     }
   }
 
-/* Perbaikan khusus untuk tampilan Mobile / Layar HP */
+/* Perbaikan Responsif Hero Section untuk Layar HP / Mobile */
 @media (max-width: 768px) {
-    /* 1. Mencegah logo partner terpotong dan membuatnya turun ke bawah secara rapi */
-    .partner-logos, .client-logos, .logos-container { /* Sesuaikan nama class container logo kamu */
+    /* 1. Ubah struktur grid hero menjadi 1 kolom ke bawah */
+    .hero-grid {
         display: flex;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 12px !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 10px !important;
-        box-sizing: border-box;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    .partner-logos img, .client-logos img, .logos-container img {
-        max-width: 80px !important;
-        height: auto !important;
-    }
-
-    /* 2. Mengatur ukuran teks utama supaya tidak terlalu besar dan kepotong */
-    .hero-section h1 {
-        font-size: 1.8rem; /* Sesuaikan ukuran font judul di mobile */
-        line-height: 1.2;
-    }
-
-    /* 3. Memastikan gambar ilustrasi menyesuaikan layar dan tidak melebar */
-    .hero-image img, .illustration img {
+    /* 2. Atur bagian logo partner agar turun ke bawah secara rapi (flex-wrap) */
+    .partners-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
         width: 100%;
-        max-width: 300px;
+    }
+
+    .partner-item {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    /* 3. Sesuaikan ukuran judul agar tidak terlalu besar di layar kecil */
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.25;
+    }
+
+    /* 4. Pastikan gambar / grafik di sebelah kanan pas di tengah dan responsif */
+    .hero-card img {
+        width: 100%;
+        max-width: 280px;
         height: auto;
         display: block;
-        margin: 20px auto;
+        margin: 0 auto;
     }
 
+    /* 5. Mencegah halaman bergeser ke samping (horizontal scroll) */
     body, html {
-        overflow-x: hidden !important;
+        overflow-x: hidden;
     }
 }
 
