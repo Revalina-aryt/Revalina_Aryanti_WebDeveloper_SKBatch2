@@ -537,17 +537,158 @@ ul {
     50% { transform: translateY(-10px); }
 }
 
+/* Styling Section Tentang Kami */
+.about-section {
+    padding: 80px 0;
+    background-color: #f8fafc;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.section-badge {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #2563eb;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #0f172a;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+}
+
+.about-desc {
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* Fitur List */
+.about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.feature-icon {
+    background-color: #2563eb;
+    color: #ffffff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.feature-item h4 {
+    color: #0f172a;
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.feature-item p {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Kartu Visi & Misi */
+.about-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.vm-card {
+    background-color: #ffffff;
+    padding: 1.8rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.vm-icon {
+    width: 44px;
+    height: 44px;
+    background-color: #eff6ff;
+    color: #2563eb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.vm-card h3 {
+    color: #0f172a;
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+}
+
+.vm-card p, .vm-card ul {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.vm-card ul {
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Responsif untuk Tablet & HP */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+}
+
 /* ==========================================================================
    6. JOB CATEGORIES SECTION
    ========================================================================== */
 .categories {
     padding: 100px 0;
-    background-color: #ffffff;
+    background-color:  hsla(216, 77%, 76%, 0.511);
 }
 
 .categories-jobs {
     padding: 30px 0;
-    background-color: #ffffff;
+    background-color: hsla(216, 77%, 76%, 0.511);
 }
 .section-header {
     display: flex;
