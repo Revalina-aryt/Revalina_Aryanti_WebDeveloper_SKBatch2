@@ -188,7 +188,7 @@ ul {
     gap: 16px;
 }
 
-.lang-select {
+/* .lang-select {
     background: transparent;
     color: var(--text-light);
     border: none;
@@ -201,7 +201,7 @@ ul {
 .lang-select option {
     background-color: var(--dark-bg);
     color: #fff;
-}
+} */
 
 .top-socials {
     display: flex;
@@ -243,48 +243,9 @@ ul {
     color: #1e293b;
   }
   
-  @media (max-width: 768px) {
-    .mobile-toggle {
-      display: block;
-    }
-  
-    .nav-links {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #ffffff;
-      flex-direction: column;
-      padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      z-index: 1000; 
-      gap: 1rem;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  }
 
 .mobile-cta {
     display: none;
-}
-
-@media (max-width: 768px) {
-    .desktop-cta {
-        display: none !important;
-    }
-
-    .mobile-cta {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        width: 100%;
-        margin-top: 15px;
-        text-align: center;
-    }
 }
 
 .nav-dropdown {
@@ -327,32 +288,6 @@ ul {
   .nav-dropdown:hover .fa-chevron-down {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar, .container {
-      position: relative;
-    }
-  
-    .nav-links {
-      display: none;
-      position: absolute;
-      top: 100%;    
-      left: 0;
-      right: 0;
-      width: 100%;  
-      background-color: #ffffff;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1.5rem;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-      gap: 1.2rem;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
   }
 
 .logo {
@@ -556,46 +491,8 @@ ul {
     50% { transform: translateY(-10px); }
 }
 
-/* Perbaikan khusus untuk tampilan Mobile / Layar HP */
-@media (max-width: 768px) {
-    /* 1. Mencegah logo partner terpotong dan membuatnya turun ke bawah secara rapi */
-    .partner-logos, .client-logos { /* Sesuaikan nama class container logo kamu */
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .partner-logos img, .client-logos img {
-        max-width: 90px; /* Batasi ukuran logo agar pas di HP */
-        height: auto;
-    }
-
-    /* 2. Mengatur ukuran teks utama supaya tidak terlalu besar dan kepotong */
-    .hero-section h1 {
-        font-size: 1.8rem; /* Sesuaikan ukuran font judul di mobile */
-        line-height: 1.2;
-    }
-
-    /* 3. Memastikan gambar ilustrasi menyesuaikan layar dan tidak melebar */
-    .hero-image img, .illustration img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-    }
-
-    /* 4. Mencegah seluruh halaman bisa digeser ke samping (horizontal scroll) */
-    body, html {
-        overflow-x: hidden;
-    }
-}
-
 /* ==========================================================================
-   5. ABOUT SECTION
+   6. ABOUT SECTION
    ========================================================================== */
 /* Styling Section Tentang Kami */
 .about-section {
@@ -722,24 +619,8 @@ ul {
     gap: 0.5rem;
 }
 
-/* Responsif untuk Tablet & HP */
-@media (max-width: 768px) {
-    .about-section {
-        padding: 60px 0;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
-    .section-title {
-        font-size: 1.6rem;
-    }
-}
-
 /* ==========================================================================
-   6. JOB CATEGORIES SECTION
+   7. JOB CATEGORIES SECTION
    ========================================================================== */
 .categories {
     padding: 100px 0;
@@ -835,7 +716,7 @@ ul {
 }
 
 /* ==========================================================================
-   7. DARK FEATURE SECTION
+   8. DARK FEATURE SECTION
    ========================================================================== */
 .features-dark {
     background-color: var(--dark-navy);
@@ -908,7 +789,7 @@ ul {
 }
 
 /* ==========================================================================
-   8. FOOTER
+   9. FOOTER
    ========================================================================== */
 .footer {
     background-color: var(--dark-bg);
@@ -936,7 +817,7 @@ ul {
 }
 
 /* ==========================================================================
-   9. RESPONSIVE MEDIA QUERIES
+   10. RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 @media (max-width: 1024px) {
     .hero-title {
@@ -993,5 +874,125 @@ ul {
     .footer .container {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      flex-direction: column;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 1000; 
+      gap: 1rem;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .desktop-cta {
+        display: none !important;
+    }
+
+    .mobile-cta {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar, .container {
+      position: relative;
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;    
+      left: 0;
+      right: 0;
+      width: 100%;  
+      background-color: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      gap: 1.2rem;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+
+/* Perbaikan khusus untuk tampilan Mobile / Layar HP */
+@media (max-width: 768px) {
+    /* 1. Mencegah logo partner terpotong dan membuatnya turun ke bawah secara rapi */
+    .partner-logos, .client-logos { /* Sesuaikan nama class container logo kamu */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .partner-logos img, .client-logos img {
+        max-width: 90px; /* Batasi ukuran logo agar pas di HP */
+        height: auto;
+    }
+
+    /* 2. Mengatur ukuran teks utama supaya tidak terlalu besar dan kepotong */
+    .hero-section h1 {
+        font-size: 1.8rem; /* Sesuaikan ukuran font judul di mobile */
+        line-height: 1.2;
+    }
+
+    /* 3. Memastikan gambar ilustrasi menyesuaikan layar dan tidak melebar */
+    .hero-image img, .illustration img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* 4. Mencegah seluruh halaman bisa digeser ke samping (horizontal scroll) */
+    body, html {
+        overflow-x: hidden;
+    }
+}
+
+/* Responsif untuk Tablet & HP */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
     }
 }
