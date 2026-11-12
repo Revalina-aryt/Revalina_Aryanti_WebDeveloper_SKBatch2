@@ -262,11 +262,30 @@ ul {
       gap: 1rem;
     }
   
-    /* KETIKA KLIK: Class 'active' ditambahkan lewat JS agar menu muncul */
     .nav-links.active {
       display: flex;
     }
   }
+
+.mobile-cta {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-cta {
+        display: none !important;
+    }
+
+    .mobile-cta {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
 
 .nav-dropdown {
     position: relative;
